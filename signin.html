@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <style>
+        #login-form-div {
+            padding: 20px;
+            position: relative;
+            
+            top: 60px;
+            z-index: 5;
+            margin-left: 40%;
+            /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+            background-color: white;
+            border-radius: 10px;
+            width: 25%;
+            margin: auto;
+            text-align: center;
+            margin-top: -40%;
+        }
+
+        input {
+            font-size: 18px;
+            color: rgb(192, 192, 192);
+            border-color: rgb(192, 192, 192);
+            width: 70%;
+            height: 40px;
+        }
+
+        #sub {
+            width: 70%;
+            cursor: pointer;
+            background-color: teal;
+            color: white;
+            border-radius: 10px;
+        }
+        video {
+            width: 100%;
+        }
+        nav{
+        position:fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        padding: 10px 90px;
+        box-sizing: border-box;
+        background: rgba(0,0,0,0.4);
+        border-bottom: 1px solid #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 5;
+    }
+    .nav .logo{
+        padding: 22px 20px;
+        height: 80px;
+        float: left;
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    nav ul{
+        list-style: none;
+        float: right;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+nav ul li a:hover{
+    background: rgba(0,0,0,0.7);
+}
+.logo{
+    margin-top: 15px;
+}
+/* #pdiv{
+        display: flex;
+    } */
+    #register{
+        text-decoration: none;
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: #fff;
+        margin-right: 10px;
+    }
+    #sigin{
+        text-decoration: none;
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: #fff;
+        margin-right:15px;
+    }
+
+
+    #footer{
+    height: 250px;
+    display: flex;
+   width: 70%;
+    margin: auto;
+    justify-content: space-between;
+    padding-top:60px ;
+    background-color: #26A9E1;
+}
+.top{
+font-family: "Open Sans", sans-serif;
+font-size: 14px;
+font-weight: 600;
+color: #041628;
+line-height: 1.4px;
+letter-spacing: 1px;
+
+
+}
+.below{
+    font-size: 16px;
+    letter-spacing: 1.4px;
+font-family: "Open Sans", sans-serif;
+font-weight: 400;
+margin-top: 20px;
+
+}
+.below>a{
+    text-decoration: none;
+    color: #ffff;
+}
+.below>a:hover{
+    text-decoration: underline;
+}
+#gapp{
+    width: 120px;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+#aapp{
+    width: 120px;
+    height: 42px;
+    margin-top: 15px;
+}
+#footer-top{
+    background-color: #26A9E1;
+    position: relative;
+    top: 300px;
+    /* bottom: 0px; */
+}
+.below1{
+    font-size: 12px;
+    letter-spacing: 1.4px;
+font-family: "Open Sans", sans-serif;
+font-weight: 400;
+margin-top: 20px;
+margin-left: 15%;
+color: #fff;
+padding-bottom: 40px;
+}
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo"><a href="index.html"><img src="https://www.gymwolf.com/img/gymwolf.png" alt=""></a> </div>
+        <ul>
+            <li><a id="register" href="register.html">Register</a></li> 
+
+            <li><a href="" id="sigin">Sign In</a></li>
+        
+            <li><span style="color:white" class="material-symbols-outlined">
+                search
+                </span></li>
+        </ul>       
+    </nav>
+    <video src="https://www.gymwolf.com/images/Gymwolf_video.mp4" muted loop autoplay></video>
+    <div id="login-form-div">
+        <form>
+            <h2>Sign In</h2>
+            <input type="email" id="email" placeholder=" E-mail"><br><br>
+            <input type="password" id="password" placeholder="Password"><br><br>
+            <input type="submit" id="sub" id="sub">
+        </form>
+
+        <p>Or</p>
+
+        <p>Not a Gymwolf user?<a href="register.html">Sign Up</a></p>
+    </div>
+
+    <div id="footer-top"><div id="footer">
+        <div>
+            <p class="top">ABOUT</p>
+            <p class="below"><a  href="https://www.gymwolf.com/about">About us</a></p>
+            <p class="below"><a  href="">Contact</a></p>
+        </div>
+    
+        <div>
+            <p class="top">LEGAL</p>
+            <p class="below"><a href="https://www.gymwolf.com/tos">Terms of Service</a></p>
+            <p class="below"><a  href="">Privacy</a></p>
+            <p class="below"><a  href="">Pricing</a></p>
+        </div>
+    
+        <div>
+            <p class="top">Get the app</p>
+            <div><a href="https://play.google.com/store/apps/details?id=com.mooncascade.gymwolf"><img id="gapp" src="https://www.rdsdelivery.com/wp-content/uploads/2016/11/get-it-on-google-play-icon-logo-e1486678715107-300x105.png.webp" alt=""></a></div>
+            <div><a href="https://apps.apple.com/us/app/gymwolf/id1228119580"><img id="aapp" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Available_on_the_App_Store_%28black%29_SVG.svg/203px-Available_on_the_App_Store_%28black%29_SVG.svg.png?20130522010834" alt=""></a> </div>
+            
+           
+        </div>
+    
+        <div>
+            <p class="top">SOCIAL</p>
+            <img src="" alt="">
+        </div>
+    
+        <div>
+            <p class="top">LANGUAGE</p>
+            <p class="below"><a  href="">Eesti keeles</a></p>
+        </div>
+    
+    
+       
+        
+    </div>
+    <hr>
+    <p class="below1">Copyright © Mooncascade OÜ. All Rights Reserved. Tel: +372 5344 5686. E-mail: info@gymwolf.com</p>
+  
+    </div>
+
+</body>
+
+</html>
+
+<script src="login.js" ></script>

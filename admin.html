@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <style>
+      #admin,
+      #workout {
+        border: 1px solid black;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+        margin: auto;
+        margin-top: 10vh;
+        margin-bottom: 200px;
+      }
+      #admin input,
+      #workout input {
+        display: block;
+        margin: 20px;
+        height: 30px;
+        width: 300px;
+      }
+      #btn,
+      #btn1 {
+        display: block;
+        width: 100px;
+        margin-left: 150px;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="admin">
+      <form>
+        <input type="text" id="smallImg" placeholder="interUrl" />
+        <input type="text" id="title" placeholder="Enter title" />
+        <input type="text" id="Sort" placeholder="Enter Short Details" />
+        <input type="text" id="video" placeholder="Enter Video Url" />
+        <input type="text" id="bigImg" placeholder="Enter Image Url" />
+        <input type="text" id="muscleGroup" placeholder="Enter muscleGroup" />
+        <input type="text" id="steps" placeholder="Enter Steps" />
+        <input type="text" id="tips" placeholder="Enter Tips" />
+        <input type="text" id="warning" placeholder="Enter warning" />
+      </form>
+      <button id="btn">Add</button>
+    </div>
+
+    <div id="workout">
+      <form>
+        <input type="text" id="smallImg1" placeholder="interUrl1" />
+        <input type="text" id="title1" placeholder="Enter title1" />
+        <input type="text" id="Sort1" placeholder="Enter Short Details1" />
+        <input type="text" id="video1" placeholder="Enter Video Url1" />
+        <input type="text" id="bigImg1" placeholder="Enter Image Url1" />
+      </form>
+      <button id="btn1">Add</button>
+    </div>
+  </body>
+</html>
+
+<script>
+  let add = async () => {
+    let gymData = {
+      smallImg: document.querySelector("#smallImg").value,
+
+      title: document.querySelector("#title").value,
+
+      video: document.querySelector("#video").value,
+
+      Sort: document.querySelector("#Sort").value,
+
+      bigImg: document.querySelector("#bigImg").value,
+
+      muscleGroup: document.querySelector("#muscleGroup").value,
+
+      steps: document.querySelector("#steps").value,
+
+      tips: document.querySelector("#tips").value,
+
+      warning: document.querySelector("#warning").value,
+    };
+
+    gymData = JSON.stringify(gymData);
+
+    let response = await fetch("http://127.0.0.1:3000/api/cardio", {
+      method: "POST",
+
+      body: gymData,
+
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+
+    let data = await response.json();
+
+    console.log(data);
+  };
+
+  document.querySelector("#btn").addEventListener("click", add);
+
+  let add1 = async () => {
+    let gymData = {
+      smallImg: document.querySelector("#smallImg1").value,
+
+      title: document.querySelector("#title1").value,
+
+      video: document.querySelector("#video1").value,
+
+      Sort: document.querySelector("#Sort1").value,
+
+      bigImg: document.querySelector("#bigImg1").value,
+    };
+
+    gymData = JSON.stringify(gymData);
+
+    let response = await fetch("http://127.0.0.1:3000/api/workout", {
+      method: "POST",
+
+      body: gymData,
+
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+
+    let data = await response.json();
+
+    console.log(data);
+  };
+
+  document.querySelector("#btn1").addEventListener("click", add1);
+</script>

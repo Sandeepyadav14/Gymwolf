@@ -1,0 +1,244 @@
+*{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+}
+#container{
+    border: 0.1px solid blue;
+  height: 222px;
+  /* margin-top: 100px; */
+  margin-top: 80px;
+  background-image: url("https://www.gymwolf.com/img/exercises.jpg");
+  
+}
+#container>h1{
+    text-align: center;
+    margin-top: 85px;
+    font-size: 48px;
+    margin-right: 67px;
+    color: #fff;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+}
+#exercise_nav{
+    /* border: 1px solid green; */
+    height: 60px;
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+#one{
+    border: 1px solid  #e3e3e3;
+    height: 40px;
+    width: 10%;
+    margin-top: 20px;
+    border-bottom: none;
+}
+#one>p{
+    text-align: center;
+    margin-top: 13px;
+    color: #333;
+    font-size: 15px;
+}
+#two{
+    /* border: 1px solid rgb(196, 11, 42); */
+    width: 90%;
+    height: 60px;
+    border:  none;
+    border-bottom: 1px solid  #e3e3e3;
+    display: flex;
+    justify-content: space-between;
+}
+#child1{
+    margin-top: 30px;
+    display: flex;
+    margin-left: 25px;
+    gap: 25px;
+}
+#btndiv{
+    width: 16%;
+    
+}
+
+#btndiv>button{
+    width: 100%;
+    font-size: 15px;
+    height: 36px;
+    margin-top: 10px;
+    border-radius: 4px;
+    background-color:#2ecc71;
+    border-color: #29b062;
+    color: #fff;
+    border: 1px solid  grey;
+    cursor: pointer;  
+}
+#btndiv>button:hover{
+    color: #fff;
+    background-color: #29b062;
+}
+#child1>p{
+    cursor: pointer;
+    color: #428bca;;
+}
+#bottom_container{
+    /* border: 1px solid red; */
+    width: 75%;
+    /* height: 2700px; */
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#type{
+    /* border: 1px solid black; */
+    width: 74%;
+    margin-bottom: 20px;
+    /* height: 200px; */
+}
+
+#type>h1{
+    margin-top: 13px;
+    color: #333;
+}
+#data{
+    /* border: 1px solid green ; */
+    width: 100%;
+    /* height: 200px; */
+    margin-top: 13px;
+}
+#data>div{
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-between;
+
+}
+#data>div>div{
+    border: 1px solid #ddd;
+}
+#sort{
+   font-size: 14px;
+   color: #333;
+   margin-top: 10px;
+   margin-left: 10px;
+   line-height: 17px;
+   width: 650px;
+   height: 20px;
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+
+   
+}
+#div1{
+    margin: auto;
+    width: 50%;
+}
+#div1>img{
+    margin-top: 5px;
+    width: 100%;
+}
+
+#div3{
+    width: 13%;
+}
+#div2{
+    width: 87%;
+        
+}
+#title{
+    margin-top: 5px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #428bca;
+    line-height: 1.428571429;
+    cursor: pointer;
+}
+#title:hover{
+    color: #095aa1;
+}
+
+#chest{
+    width: 23%;
+    margin-bottom: 20px;
+    
+}
+#chest>button{
+    border: 1px solid  #ccc;;
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    color: #333;
+    cursor: pointer;
+}
+#btnd{
+    /* border: 1px solid red; */
+    width: 100%;
+    display: grid;
+    margin-top: 12px;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: auto;
+    gap: 3px;
+
+}
+#btnd>div>img{
+    width: 100%;
+    cursor: pointer;
+}
+#content{
+    /* position: relative; */
+    /* background: rgba(46, 105, 232, 0.6);  */
+   width: 17.3%;
+   height: 41px;
+   margin-top: -41px;
+}
+#content>h3{
+    text-align: center;
+    /* margin-top: 10px; */
+    font-size: 20px;
+    color: #f1f1f1;
+    margin-left: 90px;
+    cursor: pointer;
+    
+}
+.child>div{
+    /* position: absolute; */
+    border: 1px solid green;
+    cursor: pointer;
+    background-color:  rgba(10, 10, 160, 0.7); 
+    width: 100%;
+    height: 40px;
+    margin-top: -40px;
+    cursor: pointer;
+}
+.child:hover .content_div{
+    position:relative;
+    cursor: pointer;
+    background: rgba(46, 105, 232, 0.7); 
+    width: 100%;
+    height: 55px;
+    margin-top: -54px;
+}
+.child:hover .content_div>h3{
+    /* position: relative; */
+    color: white;
+}
+.child>div>h3{
+    text-align: center;
+    /* margin-top: 10px; */
+    font-size: 20px;
+    color: #fff;
+}

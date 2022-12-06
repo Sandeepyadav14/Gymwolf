@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Exercises</title>
+    <script
+      src="https://kit.fontawesome.com/3e2211948f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <link rel="stylesheet" href="../styless/main.css" /> -->
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="sandy_navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      #Addnewex {
+        width: 455.5px;
+        height: 38.6px;
+        display: grid;
+        justify-content: flex-start;
+        align-items: center;
+        border: 1px solid rgb(224, 213, 213);
+        margin-top: 15px;
+        padding-left: 15px;
+        margin-left:152px;
+        background-color: rgb(245, 245, 245);
+        border-radius: 3px 3px 0px 0px;
+      }
+      #Addnewex > h3 {
+        font-size: 16px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 500;
+      }
+      #main {
+        width: 455.5px;
+        height: 523px;
+        margin-left: 10px;
+        border: 1px solid rgb(224, 213, 213);
+        display: flex;
+        display: none;
+        margin-bottom: 80px;
+      }
+      #inputDiv input,
+      #exerciseName1 {
+        width: 273.66px;
+        height: 34px;
+        border-radius: 5px;
+        border: 1px solid rgb(199, 192, 192);
+        margin-top: 8px;
+        margin-bottom: 15px;
+        padding-left: 12px;
+        outline-color: rgb(11, 75, 237);
+      }
+      #inputDiv select,
+      #muscleGroup1 {
+        width: 273.66px;
+        height: 34px;
+        border-radius: 5px;
+        border: 1px solid rgb(199, 192, 192);
+        margin-top: 8px;
+        margin-bottom: 15px;
+        outline: rgb(11, 75, 237);
+      }
+      #imgDiv input {
+        width: 121.83px;
+        height: 34px;
+        border-radius: 5px;
+        border: 1px solid rgb(199, 192, 192);
+        margin-top: 8px;
+      }
+      #imgDiv button {
+        width: 121.83px;
+        height: 34px;
+        border-radius: 5px;
+        border: 1px solid rgb(199, 192, 192);
+        background-color: transparent;
+        font-size: 15px;
+        margin-top: 50px;
+        margin-bottom: 15px;
+      }
+      #imgDiv {
+        width: 122px;
+        margin-left: 15px;
+      }
+      #inputDiv {
+        margin-top: 5px;
+        margin-left: 15px;
+      }
+      #main label,
+      #smallInputDiv label {
+        font-weight: 550;
+        font-family: "open Sans", sans-serif;
+        color: rgb(56, 54, 54);
+      }
+      #btn1,
+      #btn2 {
+        display: block;
+        width: 273.66px;
+        height: 34px;
+        background-color: #2ecc71;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        margin-left: -120px;
+      }
+      #smallInputDiv {
+        width: 455.5px;
+        height: 276px;
+        margin-left: 10px;
+        border: 1px solid rgb(224, 213, 213);
+        display: inline;
+        margin-bottom: 80px;
+      }
+      #more {
+        display: flex;
+        width: 273.66px;
+        height: 34px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+        margin-left: 15px;
+        border-radius: 5px;
+        border: 1px solid rgb(199, 192, 192);
+        background-color: transparent;
+      }
+      span {
+        margin-left: 5px;
+      }
+      form {
+        width: 122px;
+        margin-top: 15px;
+        margin-left: 15px;
+      }
+      #btn2 {
+        margin-left: 15px;
+      }
+      #more:hover {
+        background-color: rgb(245, 245, 245);
+        cursor: pointer;
+      }
+      #mainFather {
+        display: flex;
+        width: 1140px;
+        margin: auto;
+        justify-content: space-between;
+      }
+      #myExercise {
+        border-bottom: 1px solid rgb(231, 226, 226);
+        width: 650px;
+        height: 50px;
+        margin-top: -20px;
+      }
+      #myExercise h1 {
+        font-weight: 500;
+        font-size: 30px;
+      }
+      #noresult {
+        border: 1px solid rgb(199, 192, 192);
+        margin-top: 20px;
+        width: 650px;
+      }
+      #noresult h3 {
+        font-weight: 500;
+        padding: 10px 0px 10px 10px;
+        color: rgb(105, 102, 102);
+      }
+      #table {
+        width: 650px;
+      }
+      .img1 {
+        width: 50%;
+        display: block;
+        margin: auto;
+        margin-top: 30%;
+        filter: opacity(0.4) drop-shadow(0 0 0 white);
+      }
+      .img1:hover {
+        filter: opacity(1);
+        cursor: pointer;
+      }
+
+      .div2,
+      .div3,
+      .div4,
+      .div5 {
+        border: 1px solid rgb(199, 192, 192);
+      }
+      .div1 {
+        display: flex;
+      }
+      .div2 {
+        width: 100%;
+        height: 56.8px;
+        background-color: rgb(245, 245, 245);
+        display: grid;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px;
+      }
+      .div3 {
+        width: 117px;
+        height: 57px;
+        display: grid;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px;
+        border-right: none;
+        border-top: 1px solid rgb(241, 233, 233);
+        border-bottom: 1px solid rgb(241, 233, 233);
+      }
+      .div5 {
+        width: 48.44px;
+        height: 57px;
+        border: 1px solid rgb(241, 233, 233);
+        border-bottom: 1px solid rgb(241, 233, 233);
+        background-color: rgba(250, 250, 250, 0.8);
+        position: relative;
+      }
+      .div5:hover {
+        background-color: transparent;
+      }
+      .div4 {
+        width: 484.54px;
+        height: 57px;
+        display: grid;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px;
+        border-right: none;
+        border: 1px solid rgb(241, 233, 233);
+        border-bottom: 1px solid rgb(241, 233, 233);
+      }
+      .h32 {
+        font-size: 20px;
+        font-weight: 500;
+      }
+      .h31 {
+        color: #428bca;
+        font-size: 16px;
+      }
+      .h33 {
+        font-weight: 500;
+        color: rgb(59, 58, 58);
+      }
+      #alert {
+        display: flex;
+        width: 1140px;
+        height: 52px;
+        margin: auto;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(223, 240, 216);
+        margin-top: 15px;
+        margin-bottom: 25px;
+        padding: 0px 15px;
+        border-radius: 5px;
+        display: none;
+      }
+      #alert h3 {
+        color: grey;
+        font-weight: 500;
+      }
+      #x:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="nav"><div id="one_div">
+      <a href="sandy.html"><img id="logo_gymwolf" src="https://www.gymwolf.com/img/gymwolf.png" alt=""></a>
+     </div>
+     <div id="two_div">
+       <div><a href="progress.html">Progress</a></div>
+       <div><a href="">Calculators</a></div>
+       <div><a href="main.html">Exercise and plans</a></div>
+       <div><a href="my_trainer.html">My personal trainer</a></div>
+       <div><a href=""><i class="fa-solid fa-comments"></i></a></div>
+       <div><p id="baljor">Sign In</p></div>
+       <div><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></div>
+     </div>
+     <div id="three_div"></div></nav>
+    <div id="mainDiv"></div>
+    <div id="alert">
+      <h3>New exercise added</h3>
+      <div><h3 id="x">x</h3></div>
+    </div>
+    <div id="list"></div>
+    <div id="grandfather">
+      <div id="Addnewex">
+        <h3>Add new exercise</h3>
+      </div>
+      <div id="mainFather">
+        <div id="main">
+          <div id="imgDiv">
+            <button>Select picture</button>
+            <label>Video URL</label>
+            <input type="text" />
+          </div>
+          <div id="inputDiv">
+            <form>
+              <label>Exercise name *</label>
+              <input type="text" required id="exerciseName" />
+              <label>Muscle group *</label>
+              <select id="muscleGroup">
+                <option value="Chest">Chest</option>
+                <option value="Biceps">Biceps</option>
+                <option value="Triceps">Triceps</option>
+                <option value="Back">Back</option>
+                <option value="Shoulder">Shoulder</option>
+                <option value="Legs">Legs</option>
+                <option value="Abdominal">Abdominal</option>
+                <option value="Combined">Combined</option>
+              </select>
+              <label>Description</label>
+              <input type="text" id="description" />
+              <label>Steps</label>
+              <input type="text" id="steps" />
+              <label>Tips</label>
+              <input type="text" id="tips" />
+              <label>Warnings</label>
+              <input type="text" id="warning" />
+            </form>
+            <button id="btn1">Add exercise</button>
+          </div>
+        </div>
+        <div id="smallInputDiv">
+          <form>
+            <label>Exercise name *</label>
+            <input type="text" required id="exerciseName1" />
+            <label>Muscle group *</label>
+            <select id="muscleGroup1">
+              <option value="Chest">Chest</option>
+              <option value="Biceps">Biceps</option>
+              <option value="Triceps">Triceps</option>
+              <option value="Back">Back</option>
+              <option value="Shoulder">Shoulder</option>
+              <option value="Legs">Legs</option>
+              <option value="Abdominal">Abdominal</option>
+              <option value="Combined">Combined</option>
+            </select>
+          </form>
+          <button id="more">
+            More
+            <!-- <h1>></h1> -->
+            <span class="fa-solid fa-angle-down"></span>
+          </button>
+          <button id="btn2">Add exercise</button>
+        </div>
+        <div id="noResultFather">
+          <div id="myExercise">
+            <h1>My exercises</h1>
+          </div>
+          <div id="noresult">
+            <h3>No results found</h3>
+          </div>
+          <div id="table"></div>
+        </div>
+      </div>
+    </div>
+    <div id="footer-top"><div id="footer">
+      <div>
+          <p class="top">ABOUT</p>
+          <p class="below"><a  href="https://www.gymwolf.com/about">About us</a></p>
+          <p class="below"><a  href="">Contact</a></p>
+      </div>
+  
+      <div>
+          <p class="top">LEGAL</p>
+          <p class="below"><a href="https://www.gymwolf.com/tos">Terms of Service</a></p>
+          <p class="below"><a  href="">Privacy</a></p>
+          <p class="below"><a  href="">Pricing</a></p>
+      </div>
+  
+      <div>
+          <p class="top">Get the app</p>
+          <div><a href="https://play.google.com/store/apps/details?id=com.mooncascade.gymwolf"><img id="gapp" src="https://www.rdsdelivery.com/wp-content/uploads/2016/11/get-it-on-google-play-icon-logo-e1486678715107-300x105.png.webp" alt=""></a></div>
+          <div><a href="https://apps.apple.com/us/app/gymwolf/id1228119580"><img id="aapp" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Available_on_the_App_Store_%28black%29_SVG.svg/203px-Available_on_the_App_Store_%28black%29_SVG.svg.png?20130522010834" alt=""></a> </div>
+          
+         
+      </div>
+  
+      <div>
+          <p class="top">SOCIAL</p>
+          <img src="" alt="">
+      </div>
+  
+      <div>
+          <p class="top">LANGUAGE</p>
+          <p class="below"><a  href="">Eesti keeles</a></p>
+      </div>
+  
+  
+     
+      
+  </div>
+  <hr>
+  <p class="below1">Copyright © Mooncascade OÜ. All Rights Reserved. Tel: +372 5344 5686. E-mail: info@gymwolf.com</p></div>
+  </body>
+</html>
+
+<script  src="myexercise.js"></script>
+
+
+
+

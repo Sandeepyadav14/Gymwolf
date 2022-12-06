@@ -1,0 +1,266 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+*{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+#sandy{
+    margin-top: 75px;
+    width: 100%;
+    height: 236px;
+}
+#sandy>img{
+    width: 100%;
+}
+#sandy>h1{
+    text-align: center;
+   font-size: 48px;
+    margin-top: -150px;
+    color: #fff;
+}
+#gym_data{
+    margin: auto;
+    width: 75%;
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px;
+}
+#gym_list{
+
+    width:26%;
+    /* height: 300px; */
+   
+}
+#gym{
+    margin-top: 10px;
+}
+
+#data{
+
+    width: 70%;
+    height: 300px;
+    
+}
+#d_child{
+    justify-content: space-around;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+    border: none;
+    cursor: pointer;
+    
+}
+#d_child:hover{
+    background-color: #eee;
+
+}
+span{
+    margin-top: 15px;
+    
+}
+#tr{
+    margin-left: 275px;
+}
+#p_text{
+  margin-left: 15px;
+  position: absolute;
+  margin-top: 12px;
+  cursor: pointer;
+
+  font-size: 14px;
+  color: #428bca;;
+
+}
+#pro{
+    text-align: center;
+    color: #fff;
+    margin-top: 1px;
+    cursor: pointer;
+}
+#p_div{
+    position: absolute;
+
+    margin-left: 140px;
+    margin-top:10px;
+    background-color: rgb(58, 201, 58);
+    width: 3%;
+    height: 20px;
+    cursor: pointer;
+
+    border-radius: 20px
+}
+.childs{
+    display:flex;
+    height: 40px;
+    border-radius: 5px;
+    justify-content: space-between;
+    margin-bottom: 2px;
+    border: none;
+    cursor: pointer;
+}
+.childs:hover{
+    background-color: #eee;
+}
+.childss{
+    display:flex;
+    background-color: #1283b3;;
+    height: 40px;
+    border-radius: 5px;
+    justify-content: space-between;
+    margin-bottom: 2px;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+.childss>.text{
+    margin-left: 15px;
+    margin-top: 12px;
+    color: #fff;
+font-size: 14px;
+    cursor: pointer;
+
+}
+.text{
+    margin-left: 15px;
+    margin-top: 12px;
+    color: #428bca;;
+    cursor: pointer;
+   font-size: 14px;
+}
+.fa-solid .fa-angle-right{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-right:15px ;
+    font-weight: bolder;
+    cursor: pointer;
+
+    color: #428bca;
+}
+#piro{
+    font-size: 20px;
+    margin-right:15px ;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+}
+#general{
+    margin-top: 10px;
+}
+#general+div{
+    margin-top: 10px;
+}
+#cardio{
+    margin-top: 10px;
+}
+#cardio+div{
+    margin-top: 10px;
+}
+#goal{
+    margin-top: 10px;
+}
+#goal+div{
+    margin-top: 10px;
+}
+#title{
+    margin-top: 20px;
+}
+#title+div{
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+    margin-top: 18px;
+}
+#three{
+    display: flex;
+    justify-content: space-between;
+}
+#three_child{
+   display: flex;
+   width: 70%;
+   justify-content: space-between;
+   
+   
+}
+#three_child>div{
+   border: none;
+   width: 47%;
+   height: 40px;
+   border-bottom: 1px solid #e5e5e5;
+
+}
+#three_child+div{
+    border: none;
+    margin-left: 25px;
+    width: 31%;
+    height: 40px;
+    border-bottom: 1px solid #e5e5e5;
+}
+#p-text{
+    margin-top: 15px;
+    font-size: 21px;
+    color: #333;
+}
+#second{
+    display: flex;
+    width: 100%;
+    
+}
+#select{
+    width: 31.3%;
+}
+#exer{
+    /* position: relative; */
+    border-radius: 5px;
+    width:100%;
+    height: 35px;
+    margin-top: 25px;
+    border: 1px solid#e5e5e5;
+
+}
+#date{
+    margin-left: 30px;
+    width: 31.7%;
+}
+#date>input{
+    /* position: relative; */
+    margin-top: 25px;
+    height: 35px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid#e5e5e5;
+
+
+}
+#month{
+    width: 30%;
+    margin-left: 25px;
+}
+#set{
+    /* position: relative; */
+    border-radius: 5px;
+    width:100%;
+    height: 35px;
+    margin-top: 25px;
+    border: 1px solid#e5e5e5;
+}
+#not{
+    width: 100%;
+    height: 200px;
+}
+#found{
+    margin-top: 80px;
+    margin-left: 290px;
+    font-size: 40px;
+    color: rgb(190, 188, 188);   
+}
+#ex{
+    color: #333;
+}
+#graph{
+    margin-top: 10px;
+    color: #333;
+    font-size: 15px;
+}

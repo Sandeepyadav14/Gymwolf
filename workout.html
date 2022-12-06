@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Workout</title>
+    <script
+      src="https://kit.fontawesome.com/3e2211948f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="sandy_navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <style>
+      #workoutList {
+        width: 1140px;
+        margin: auto;
+        margin-bottom: 80px;
+      }
+      #workoutList img {
+        display: block;
+        width: 60%;
+        border-radius: 50%;
+        margin-left: 20px;
+      }
+      
+      .div {
+        display: flex;
+        border: 1px solid rgb(195, 183, 183);
+        border-bottom:1px solid rgb(247, 243, 243);
+      }
+      #workoutList>div:last-child, #verma>div:last-child{
+        border-bottom:1px solid rgb(195, 183, 183);
+      }
+      .div1 {
+        width: 77px;
+        border-right: 1px solid rgb(195, 183, 183);
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+      .div2 {
+        width: 872px;
+        padding-left: 10px;
+      }
+      .div3 {
+        width: 222px;
+      }
+
+      .h31 {
+        margin-top: 12px;
+        font-weight: 500;
+        font-size: 15px;
+        color: rgb(57, 57, 57);
+        margin-bottom: 8px;
+      }
+      .h32 {
+        margin-top: 12px;
+        margin-bottom: 8px;
+        font-weight: 500;
+        font-size: 15px;
+        color: rgb(57, 57, 57);
+      }
+      .h3 {
+        margin-top: 8px;
+        color: #428bca;
+      }
+      .p {
+        color: rgb(57, 57, 57);
+        font-size: 12px;
+        margin-top: 3px;
+      }
+      .btn{
+        width: 204.4px;
+        height: 34px;
+        background-color: transparent;
+        border: 1px solid rgb(173, 169, 169);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3px;
+        margin-top: 7px;
+      }
+      .btn1{
+        width: 150px;
+        height: 34px;
+        background-color: transparent;
+        border: 1px solid rgb(173, 169, 169);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3px;
+        margin-top: 7px;
+        margin-left:110px;
+      }
+      .btn1>h1{
+        margin-top: 20px;
+      }
+      .btn > h3,.btn1>h3 {
+        font-weight: 300;
+        color: rgb(57, 57, 57);
+      }
+      #baby{
+        display: flex;
+        width: 1140px;
+        margin: auto;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #babyBaby{
+        width:441px;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 120px;
+        margin-bottom: 20px;
+      }
+      #baby>h3{
+        font-size: 23px;
+        font-weight: 500;
+        margin-top: 0px;
+        color: rgb(57, 57, 57);
+      }
+      #search{
+        width:190.8px;
+        height: 34px;
+        padding-left: 8px;
+        border-radius: 3px;
+        border: 1px solid rgb(173, 169, 169);
+        display: block;
+       outline:rgb(11, 75, 237) ;
+      }
+      #select{
+         width:152.4px;
+         height:34px;
+         padding-left:8px;
+         color: rgb(57, 57, 57);
+         border-radius: 3px;
+         border: 1px solid rgb(173, 169, 169);
+         outline: rgb(11, 75, 237);
+      }
+      select+button{
+        height: 34px;
+        width:86.98px;
+        background-color: #428bca;
+        color: white;
+        border: none;
+        border-radius: 3px;
+      }
+      #inputList{
+        width:1140px;
+        margin:auto;
+      }
+      #inputList h1{
+        font-size: 30px;
+        font-weight: 500;
+        padding-bottom: 20px;
+      }
+      #shahil{
+        margin-top: 40px;
+        border-bottom: 1px solid rgb(239, 230, 230);
+      }
+     #p{
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 5px;
+      background-color:rgb(217,237,247);
+      color: rgb(28, 97, 132);
+      display:flex;
+     }
+     #p>p{
+      font-weight: 500;
+     }
+     #alert {
+        display: flex;
+        width: 1140px;
+        height: 52px;
+        margin: auto;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(242,222,222);
+        margin-top: 15px;
+        margin-bottom: 25px;
+        padding: 0px 15px;
+        border-radius: 5px;
+        display: none;
+      }
+      #alert h3 {
+        color: grey;
+        font-weight: 500;
+      }
+      #x:hover {
+        cursor: pointer;
+      }
+  
+     
+    </style>
+  </head>
+  <body>
+    <nav id="nav"><div id="one_div">
+      <a href="sandy.html"><img id="logo_gymwolf" src="https://www.gymwolf.com/img/gymwolf.png" alt=""></a>
+     </div>
+     <div id="two_div">
+       <div><a href="progress.html">Progress</a></div>
+       <div><a href="">Calculators</a></div>
+       <div><a href="main.html">Exercise and plans</a></div>
+       <div><a href="my_trainer.html">My personal trainer</a></div>
+       <div><a href=""><i class="fa-solid fa-comments"></i></a></div>
+       <div><p id="baljor">Sign In</p></div>
+       <div><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></div>
+     </div>
+     <div id="three_div"></div></nav>
+    <div id="mainDiv"></div>
+    <div id="alert">
+      <h3>Workout plan added to "My workout plans"</h3>
+      <div><h3 id="x">x</h3></div>
+    </div>
+    <div id="list"></div>
+    <div id="inputList">
+    <div id="shahil"><h1>My workout plans</h1></div>
+    <div id="p"><P>You have not added any workout plans. You can use workout plans as templates to create new workouts. On the "New Workout" page select your previously saved workout plan and all the exercises from the workout plan will be added to the new workout.</P></div>
+    <div id="verma"></div>
+  </div>
+    <div id="workoutList">
+      <div id="baby">
+        <h3>Popular workout plans</h3>
+        <div id="babyBaby">
+          <input type="text" id="search" placeholder="Search..." />
+          <select id="select">
+            <option value="">-Muscle group-</option>
+            <option value="Chest">Chest</option>
+            <option value="Biceps">Biceps</option>
+            <option value="Triceps">Triceps</option>
+            <option value="Back">Back</option>
+            <option value="Shoulder">Shoulder</option>
+            <option value="Legs">Legs</option>
+            <option value="Abdominal">Abdominal</option>
+            <option value="Combined">Combined</option>
+          </select>
+         
+          <button id="class1"><span <i class="fa-solid fa-magnifying-glass"></i></span>Search</button>
+        </div>
+      </div>
+      <div id="baby2"></div>
+    </div>
+    <div id="footer-top"><div id="footer">
+      <div>
+          <p class="top">ABOUT</p>
+          <p class="below"><a  href="https://www.gymwolf.com/about">About us</a></p>
+          <p class="below"><a  href="">Contact</a></p>
+      </div>
+  
+      <div>
+          <p class="top">LEGAL</p>
+          <p class="below"><a href="https://www.gymwolf.com/tos">Terms of Service</a></p>
+          <p class="below"><a  href="">Privacy</a></p>
+          <p class="below"><a  href="">Pricing</a></p>
+      </div>
+  
+      <div>
+          <p class="top">Get the app</p>
+          <div><a href="https://play.google.com/store/apps/details?id=com.mooncascade.gymwolf"><img id="gapp" src="https://www.rdsdelivery.com/wp-content/uploads/2016/11/get-it-on-google-play-icon-logo-e1486678715107-300x105.png.webp" alt=""></a></div>
+          <div><a href="https://apps.apple.com/us/app/gymwolf/id1228119580"><img id="aapp" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Available_on_the_App_Store_%28black%29_SVG.svg/203px-Available_on_the_App_Store_%28black%29_SVG.svg.png?20130522010834" alt=""></a> </div>
+          
+         
+      </div>
+  
+      <div>
+          <p class="top">SOCIAL</p>
+          <img src="" alt="">
+      </div>
+  
+      <div>
+          <p class="top">LANGUAGE</p>
+          <p class="below"><a  href="">Eesti keeles</a></p>
+      </div>
+  
+  
+     
+      
+  </div>
+  <hr>
+  <p class="below1">Copyright © Mooncascade OÜ. All Rights Reserved. Tel: +372 5344 5686. E-mail: info@gymwolf.com</p></div>
+  </body>
+</html>
+
+<script src="workout.js"></script>
