@@ -50,4 +50,4 @@ We had to make a replica CoSchedule website. They have completely transformed th
    https://chic-druid-efa8e5.netlify.app/
 
 # Video link for How you can open this on your local computer:-
-   https://drive.google.com/file/d/1j-Zp6QeFpNyIMP27qPkXHWAKPvmZjxq7/view?usp=sharing
+   https://drive.google.com/file/d/1WmfUGw3rEWXEqSKEid-huPwTe5BsM3up/view?usp=sharing
