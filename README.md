@@ -46,8 +46,10 @@ We had to make a replica CoSchedule website. They have completely transformed th
 4) Write npm run server.
 5) Now you can open this project in the live server.
 
-# Netlify link :-
-   https://chic-druid-efa8e5.netlify.app/
-
 # Video link for How you can open this on your local computer:-
    https://drive.google.com/file/d/1WmfUGw3rEWXEqSKEid-huPwTe5BsM3up/view?usp=sharing
+ 
+ 
+# Netlify link :-
+   https://chic-druid-efa8e5.netlify.app/ 
+   
