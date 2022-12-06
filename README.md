@@ -40,9 +40,9 @@ We had to make a replica CoSchedule website. They have completely transformed th
 
 # Steps to Run it on your local computer:-
 
-1) Open The rough-stone-6895 in your VS-code.
+1) Open The Gymwolf in your VS-code.
 2) Open your Terminal.
-3) Write cd_sandy_gymwolf.
+3) Write cd Gymwolf.
 4) Write npm run server.
 5) Now you can open this project in the live server.
 
