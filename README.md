@@ -51,5 +51,5 @@ We had to make a replica CoSchedule website. They have completely transformed th
  
  
 # Netlify link :-
-   https://chic-druid-efa8e5.netlify.app/ 
+   https://roaring-daifuku-5341e2.netlify.app/ 
    
